@@ -17,6 +17,7 @@ on init
 
 on fs
     mount_all fstab.v4xx
+    swapon_all fstab.v4xx
     restorecon_recursive /sns
     restorecon_recursive /persist
     restorecon_recursive /persist-lg
